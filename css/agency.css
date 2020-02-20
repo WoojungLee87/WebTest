@@ -162,7 +162,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #464c5293;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -294,6 +294,76 @@ header.masthead .intro-text .intro-heading {
 }
 
 #portfolio * {
+  z-index: 2;
+}
+
+#Items .Items-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#Items .Items-item .Items-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#Items .Items-item .Items-link .Items-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: rgba(254, 209, 54, 0.9);
+}
+
+#Items .Items-item .Items-link .Items-hover:hover {
+  opacity: 1;
+}
+
+#Items .Items-item .Items-link .Items-hover .Items-hover-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
+}
+
+#Items .Items-item .Items-link .Items-hover .Items-hover-content i {
+  margin-top: -12px;
+}
+
+#Items .Items-item .Items-link .Items-hover .Items-hover-content h3,
+#Items .Items-item .Items-link .Items-hover .Items-hover-content h4 {
+  margin: 0;
+}
+
+#Items .Items-item .Items-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#Items .Items-item .Items-caption h4 {
+  margin: 0;
+  text-transform: none
+}
+
+#Items .Items-item .Items-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#Items * {
   z-index: 2;
 }
 
@@ -486,7 +556,12 @@ header.masthead .intro-text .intro-heading {
 
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
+  margin-bottom: 0
+}
+
+.timeline .timeline-body-left > p {
   margin-bottom: 0;
+  text-align: right;
 }
 
 @media (min-width: 768px) {
@@ -499,7 +574,7 @@ header.masthead .intro-text .intro-heading {
   }
   .timeline > li .timeline-panel {
     float: left;
-    width: 41%;
+    width: 43%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
@@ -574,6 +649,7 @@ header.masthead .intro-text .intro-heading {
   border: 7px solid rgba(0, 0, 0, 0.1);
 }
 
+
 .team-member h4 {
   margin-top: 25px;
   margin-bottom: 0;
@@ -581,6 +657,26 @@ header.masthead .intro-text .intro-heading {
 }
 
 .team-member p {
+  margin-top: 0;
+}
+
+.team-membermain {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-membermain img {
+  width: 600px;
+  height: 400px;
+  border: 7px solid rgba(0, 0, 0, 0.1);
+}
+
+.team-membermain h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.team-membermain p {
   margin-top: 0;
 }
 

@@ -1521,7 +1521,8 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e600;
+  border-bottom: 1px solid #dee2e600;
 }
 
 .table thead th {
@@ -1560,7 +1561,7 @@ pre code {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(107, 107, 107, 0.05);
 }
 
 .table-hover tbody tr:hover {
@@ -6705,6 +6706,10 @@ button.bg-dark:focus {
 
 .rounded-circle {
   border-radius: 50% !important;
+}
+
+.rounded-circlee {
+  border-radius: 10% !important;
 }
 
 .rounded-pill {
